@@ -21,11 +21,16 @@
                 ?>
              <!--form -->
             <form method="POST" action="login.php"> 
-            <?php
-            if(isset($_GET['success'])){
-            echo "<p class='alert alert-success'>".$_GET['success'] ."</p>";
-        }
-            ?>
+                      <!--firstname -->
+                      <div class="form-group">
+                <label>FirstName:</label>
+                <input name="firstname" type="text" class="form-control" required/>
+            </div>
+                      <!--lastname -->
+                      <div class="form-group">
+                <label>LastName:</label>
+                <input name="lastname" type="text" class="form-control" required/>
+            </div>
                   <!--username -->
             <div class="form-group">
                 <label>Userame:</label>
@@ -38,9 +43,9 @@
             </div>
               <!--submit button -->
             <div class="form-group">
-            <input type="submit" name="loginApp" class="btn btn-success form-control" value="Log In">
+            <input type="submit" name="regApp" class="btn btn-success form-control" value="Sign Up">
         </div>
-        <p> Are you yet to have an Account? <a href="reg.php"> Create Account </a> Now</p>
+        <p> Are a member? <a href="index.php"> Login  </a> Now</p>
             </form>
               <!--form -->
         </div>
